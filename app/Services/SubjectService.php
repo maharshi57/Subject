@@ -11,11 +11,6 @@ class SubjectService{
     }
 
     public function create($fields){
-        // $subject = new Subject;
-        // $subject->name = $fields['name'];
-        // $subject->subject_code = $fields['subject_code'];
-        // $subject->color = '#' . $fields['color'];
-        // $subject->save();
         $subject = Subject::create($fields);
         return $subject;
     }
